@@ -10,7 +10,7 @@
     text-decoration: none;
     overflow-x: hidden;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 body{
     background-color: #1C2025;
@@ -18,10 +18,12 @@ body{
 }
 nav{
     position: relative;
+    position: fixed;
     padding: 10px;
-    background-color: #fff;
+    background-color: #1C2025;
     /* background-color: rgba(255, 255, 255, 0.212); */
     width: 100%;
+    color: black;
     height:80px;
     box-shadow: 0 0 4px black;
     display: flex;
@@ -34,8 +36,8 @@ ul{
     gap: 2em;
 }
 a{
-    /* color: #FFFFFF; */
-    color: rgb(11, 13, 17);
+    color: #FFFFFF;
+    /* color: rgb(11, 13, 17); */
     /* font-family: 'Josefin Sans'; */
     font-size: 21px;
     font-weight: 500;
@@ -85,6 +87,17 @@ nav .btn{
     display: flex;
     align-items: center;
 }
+li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+a{
+    color: black;
+}
+span{
+     color: black;
+    }
+}
 button{
     width: 80px;
     border-radius: 5px;
@@ -108,7 +121,6 @@ nav button:hover{
     opacity: 0.8    ;
 }
 .MAIN{
-    height: 100VH;
     width: 100%;
     font-size: ;
     padding: 20px;
@@ -143,6 +155,7 @@ nav li{
     font-size: 30px;
 }
 .profile img{
+    z-index: -1;
     object-fit: cover;
     width: 400px;
     height: 90%;
@@ -152,4 +165,64 @@ nav li{
 }
 .profile img:hover{
     filter: grayscale(0);
+}
+.skill-p1{
+    margin-top: 50px;
+    width: 100%;
+   
+}
+header{
+    margin-top: 100px;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: tomato;
+}
+.Experiances{
+    font-size: 25px;
+    width: 80%;
+    text-wrap: wrap;
+    margin: auto;
+    margin-top:50px ;
+}
+.inner-bar{
+    display: flex;
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    margin:20px auto;
+    display: block;
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f2;
+    border-radius: 20px;
+}
+.skill-p1 p{
+    font-size: 30px;
+    margin-left: 150px;
+}
+@media screen and (max-width:800px) {
+ .MAIN{
+    flex-direction: column;
+ }
+ .profile_content{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+ }
+ .one{
+    display: none;
+ }
+ ul{
+    width: 30%;
+ }
+ nav input{
+    width: 100px;
+    left: 40%;
+ }
 }
