@@ -12,6 +12,11 @@
     font-weight: bold;
     color: white;
 }
+.light_mode{
+    color:black;
+    background-color: white;
+}
+
 body{
     background-color: #1C2025;
     /* background-color: white; */
@@ -50,9 +55,9 @@ nav input{
     border: none;
     position: absolute;
     border-radius: 5px;
-    right: 22%;
+    right: 26%;
     height: 30px;
-    width: 300px;
+    width: 250px;
     font-size: 20px;
     padding: 10px;
     border: 1.5px SOLID rgb(11, 13, 17);
@@ -87,17 +92,32 @@ nav .btn{
     display: flex;
     align-items: center;
 }
-nav li:hover{
+#mode-change{
+    width: 40px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+#mode-span{
+    color: black;
+}
+ /*nav li:hover{ 
     background-color: white;
     color: black;
     border-radius: 5px;
-a{
-    color: black;
-}
+ }*/
+
+
 span{
      color: black;
     }
-}
 button{
     width: 80px;
     border-radius: 5px;
@@ -152,16 +172,25 @@ footer{
 }
 span{
     overflow-y: hidden;
+    color: white;
 }
+
 nav li{
     display: flex;
     align-items: center;
+    color: white;
     gap: 5px;
     font-size: 20px;
 }
+nav li .one{
+    color: white;
+}
+nav li span{
+    color: white;
+}
 #search{
     position: absolute;
-    right: 23.1%;
+    right: 27.1%;
 }
 .profile p{
     font-weight: 300;
